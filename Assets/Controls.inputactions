@@ -2,23 +2,14 @@
     "name": "Controls",
     "maps": [
         {
-            "name": "Player",
-            "id": "3a140d9f-fa32-4d9b-b52f-8396b037b250",
+            "name": "PaddleControls",
+            "id": "6475e1ae-c3a5-4070-8a31-bca04a8ba2bf",
             "actions": [
                 {
-                    "name": "Movement",
+                    "name": "Move",
                     "type": "PassThrough",
-                    "id": "ca8da07d-51fe-46dc-b6e8-42e27893fabd",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "ChangeColor",
-                    "type": "Button",
-                    "id": "69fb9497-03aa-42d7-a3e8-55802d389c95",
-                    "expectedControlType": "",
+                    "id": "46b6c3dc-ff70-4003-96bf-c52a0bf82caf",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -26,92 +17,48 @@
             ],
             "bindings": [
                 {
-                    "name": "WASD",
-                    "id": "81909818-b9b3-4a11-90e9-d7a96c85827c",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "1082ece7-f964-4fe3-8464-72d5d4156232",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Controller",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "85d255f2-b489-491f-8069-ece162bdb3d5",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "abb7946a-c5c4-4da1-ac6c-d37af80b5acb",
-                    "path": "<Keyboard>/w",
+                    "name": "negative",
+                    "id": "ff517336-5319-4894-81aa-b10cb0890cff",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard",
-                    "action": "Movement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "down",
-                    "id": "698aacbf-6117-4bc3-8cd6-1a819836ccc9",
-                    "path": "<Keyboard>/s",
+                    "name": "positive",
+                    "id": "5ab9aa15-7196-4fc6-8ebd-997ef1d41aae",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard",
-                    "action": "Movement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "f7934d21-aa67-4cc3-a264-561e235500c3",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "e1b58488-023e-4869-b850-8ff789921574",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "90f62cf4-00cf-4ff4-af39-568df065823b",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Controller",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ea32c207-9d6e-40f4-9fbc-28f9a42f6d52",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Controller",
-                    "action": "ChangeColor",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b405e072-0f33-4324-aee5-a1150c70c33e",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard",
-                    "action": "ChangeColor",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
