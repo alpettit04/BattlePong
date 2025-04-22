@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class GameLogicScript : MonoBehaviour
 {
@@ -22,9 +23,11 @@ public class GameLogicScript : MonoBehaviour
     public void OnPlayerJoined(PlayerInput input)
     {
         var playerScript = input.gameObject.GetComponent<PlayerScript>();
-        playerScript.Paddle = GameObject.FindGameObjectWithTag(input.playerIndex == 0 ? "LPaddle" : "RPaddle");
+        var paddle = GameObject.FindGameObjectWithTag(input.playerIndex == 0 ? "LPaddle" : "RPaddle");
+        playerScript.Rigidbody = paddle.GetComponent<Rigidbody2D>();
+        playerScript.Paddle = paddle;
 
-        if(++numPlayers == 2)
+        if (++numPlayers == 2)
             StartGame();
     }
 

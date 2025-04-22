@@ -4,8 +4,9 @@ using UnityEngine.InputSystem;
 public class PlayerScript : MonoBehaviour
 {
     public GameObject Paddle { get; set; }
+    public Rigidbody2D Rigidbody { get; set; }
 
-    public float speed = 2;
+    public float speed = 20;
 
     private Vector3 movementInput;
 
@@ -19,7 +20,8 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Paddle.transform.position += movementInput;
+        Rigidbody.linearVelocity = movementInput;
+        // Paddle.transform.position += movementInput;
     }
 
     public void OnMove(InputAction.CallbackContext context)

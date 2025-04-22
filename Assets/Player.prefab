@@ -59,14 +59,6 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ca8da07d-51fe-46dc-b6e8-42e27893fabd
-    m_ActionName: 'Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 69fb9497-03aa-42d7-a3e8-55802d389c95
-    m_ActionName: 'Player/ChangeColor[/XInputControllerWindows/buttonSouth,/Keyboard/space]'
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8485789852205023357}
         m_TargetAssemblyTypeName: PlayerScript, Assembly-CSharp
@@ -99,4 +91,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988338dbb6a394d48be0260c59fffb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1000
